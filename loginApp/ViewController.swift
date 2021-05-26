@@ -6,14 +6,24 @@
 //
 
 import UIKit
+import SwiftUI
 
 class ViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
-
-
+    
+    @IBAction func userNameAlertButton() {
+    Alert.showUserAlert(on: self, with: "My String", message: "My message")
+    }
+    
+    @IBAction func passwordAlertButton() {
+    Alert.showPasswordAlert(on: self, with: "My String", message: "My message")
+    }
+    
 }
+
+    
+
 
